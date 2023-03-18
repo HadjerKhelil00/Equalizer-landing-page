@@ -1,23 +1,200 @@
 body, html{
     width: 100%;
-    height:100%;
+    min-height: 100vh;
+    
+}
+body{
     display: flex;
     box-sizing: border-box;
     justify-content: center;
     text-align: left;
+    background-color: #fcfaf9;
     background-image: url(./images/bg-main-desktop.png);
-    
+    background-position: 50% 50%;
+    overflow-x: hidden;
+}
+.container::before{
+
+    /* content:""; 
+    display: block; 
+    background-image: url(./images/bg-main-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100px 700px;
+    margin: 0;
+    padding:0;
+     width: 100%; 
+     height: 100%;  */
 }
 .container{
-    margin: 120px;
+    margin-top: 60px;
+    margin-left: 90px;
+    display:flex;
+    flex-direction: column;
+    padding-left: 2px;
+    padding-right: 20px;
+    overflow: hidden;
 }
-.logo{
-    position: absolute;
-    top:70px;
-    left: 120px;
+
+.logo-container{
+     width:80%; 
+     
+     margin-left: 20px;
+     margin-bottom:60px;
 }
+
 .pattern-1{
   position: absolute;
   top:-40px;
   right: -35px;
+}
+.title{
+  width: 70%;
+  margin-bottom: -50px;
+  margin-left: 20px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 58px;
+  line-height: 1;
+  text-align: left;
+  color:#191826;
+}
+.description{
+    width:65%;
+    margin-left:20px ;
+    font-family:"IBM Plex Sans", sans-serif;
+    font-size:20px ;
+    line-height: 34px;
+    text-align: left;
+    color: #191826;
+}
+.illustration{
+    height: 600px;
+    position: relative;
+    margin-top: 300px;
+    margin-left: 2%;
+    margin-right: 9%;
+    border-radius: 15px;
+    background-color: #191826;
+    
+}
+.illustration-app{
+    position: absolute;
+    left: 89px;
+    bottom: 169px;
+    width:312px ;
+    height: 642px;
+    margin-top: 60px;
+    z-index: 1;
+}
+.pattern-2{
+    position:relative;
+    left: 317px;
+    bottom: 40px;
+    z-index: 0;
+}
+.premium{
+    position: absolute;
+    top: 145%;
+    left: 51%;
+    max-width: 346px;
+    min-height: 500px;
+    font-family: "IBM Plex Sans", sans-serif;
+    padding: 50px;
+    padding-top: 40px;
+    border-radius: 13px;
+    background-color: #fa7453;
+    color: white;
+    
+    
+}
+.premium h1{
+    font-size: 40px;
+}
+.premium p:nth-child(2){
+    margin-bottom: 0;
+    width: 95%;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.price{
+    margin: 20px 0 ;
+    font-size: 65px;
+    font-weight: bold;
+}
+#price-light{
+    font-weight: 300;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.ios{
+    width: 94%;
+    height: 61px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.13px;
+    color: white;
+    background-color: #191826; 
+    text-align: center;
+    cursor: pointer;
+    transition: all 200ms ease-in-out ;
+}
+.ios-logo{
+    vertical-align: middle;
+}
+.ios:hover{
+    background-color: aqua;
+    width: 98%;
+    height: 64px ;
+    margin-left:1% ;
+    margin-right: 1%;
+}
+.android{
+    width: 94%;
+    height: 61px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.13px;
+    color: black;
+    background-color: white; 
+    text-align: center;
+    cursor: pointer;
+    transition: all 200ms ease-in-out ;
+}
+.android-logo{
+    vertical-align: middle;
+}
+.android:hover{
+    background-color: #ffb964;
+    width: 98%;
+    height: 64px ;
+    margin-left:1% ;
+    margin-right: 1%;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 24px;
+}
+.right-container{
+    margin-top: 200px;
+    width: 200px;
+}
+.bottom-logo{
+    
+}
+.copyright{}
+.left-container{
+    margin-top: 200px;
+    width: 200px;
 }

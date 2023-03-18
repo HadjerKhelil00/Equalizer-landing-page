@@ -19,23 +19,27 @@
       rel="stylesheet"
     />
   </head>
-  <body class="container">
-    <header class="logo"><img src="./images/logo.svg" /></header>
-    <div class="pattern-1"><img src="./images/bg-pattern-1.svg" /></div>
-    <section class="title">
-      <h1>We make your music sound extraordinary.</h1>
-    </section>
-    <section class="description">
-      <p>
-        A system audio equalizer specifically designed for android and iOS.
-        Freely tune the way your music sounds with a professional grade
-        parametric EQ & volume mixer. Control bass, mids, treble, gain control,
-        reverb, and more!
-      </p>
-    </section>
-    <section class="illustration">
-      <img src="./images/bg-pattern-2.svg" />
-      <img src="./images/illustration-app.png" />
+  <body>
+    <div class="container" aria-colspan="clearfix">
+      <header class="logo-container">
+        <img class="logo" src="./images/logo.svg" />
+      </header>
+      <div class="pattern-1"><img src="./images/bg-pattern-1.svg" /></div>
+      <section class="title">
+        <h1>We make your music sound extraordinary.</h1>
+      </section>
+      <section class="description">
+        <p>
+          A system audio equalizer specifically designed for Android and iOS.
+          Freely tune the way your music sounds with a professional grade
+          parametric EQ & volume mixer. Control bass, mids, treble, gain
+          control, reverb, and more!
+        </p>
+      </section>
+      <section class="illustration">
+        <img class="illustration-app" src="./images/illustration-app.png" />
+        <img class="pattern-2" src="./images/bg-pattern-2.svg" />
+      </section>
       <div class="premium">
         <h1>Premium EQ</h1>
         <p>
@@ -43,10 +47,30 @@
           spatial audio. Take your listening experience to a whole new level and
           access all our incredible features!
         </p>
-        <span class="price">$4 /month</span>
-        <button class="ios">iOS Download</button>
-        <button class="android">Android Download</button>
+        <p class="price">
+          $4
+          <span id="price-light"> /month </span>
+        </p>
+        <button class="ios">
+          <img src="./images/icon-apple.svg" alt="apple logo" class="apple-logo">
+          iOS Download
+        </button>
+        <button class="android">
+          <img src="./images/icon-android.svg" alt="android logo" class="android-logo">
+          Android Download</button>
       </div>
-    </section>
+      <footer >
+      <div class="right-container">
+        <img class="bottom-logo" src="./images/logo.svg" />
+        <p class="copyright">fjkdkfhs</p>
+      </div>
+      <div class="left-container">
+        <img src="./images/icon-facebook.svg" alt="icon-facebook">
+        <img src="./images/icon-instagram.svg" alt="icon-instagram">
+        <img src="./images/icon-twitter.svg" alt="icon-twitter">
+      </div>
+    </footer>
+    </div>
+   
   </body>
 </html>
